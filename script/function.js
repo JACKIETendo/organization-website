@@ -46,7 +46,7 @@ function initMap() {
         center: myLatLng,
     });
     //add a marker to the map
-    const marker = new google.maps .Marker({
+    const marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
         title: "Our location"
