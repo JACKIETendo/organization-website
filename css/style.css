@@ -88,6 +88,8 @@ header .btn{
 .ul li{
     width: 50px;
     height: 50px;
+    margin-top: 20px;
+    margin-bottom: 5px;
     background: var(--color);
     border-radius: 50%;
     animation: grow 1.5s ease-in-out infinite;
@@ -246,6 +248,7 @@ ul li a:hover::after{
 #main-col .col h1{
     font-size: 3.5vmin;
     padding-bottom: 20px;
+    font-style: italic;
 }
 #main-col .col p{
     font-size: 3vmin;
@@ -294,6 +297,8 @@ ul li a:hover::after{
 .pricing .only-text h1{
     font-size: 3rem;
     padding: 10px 0;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .pricing .only-text p{
     font-size: 1.2rem;
@@ -312,12 +317,13 @@ ul li a:hover::after{
 .pricing .pricing-sec .four{
     width: 100%;
     max-width: 250px;
-    border: 3px solid rgb(216, 102, 136);
+    border: 7px solid rgb(216, 102, 136);
     box-shadow: rgb(185, 183, 183)5px 5px;
     text-align: center;
     margin: 20px 10px;
     padding: 20px 0;
     overflow: hidden;
+    border-radius: 20px;
 }
 .pricing .pricing-sec .one h3,
 .pricing .pricing-sec .two h3,
@@ -378,6 +384,7 @@ ul li a:hover::after{
 #products .only-text2 h1{
     font-size: 3rem;
     padding: 10px 0;
+    font-style: italic;
 }
 #products .products_section{
     width: 100%;
@@ -416,7 +423,7 @@ ul li a:hover::after{
 #products .products_section .prod_ten:hover{
     background-color: rgb(216, 189, 196);
     transition: 0.7s ease-in;
-    border-radius: 15px;
+    border-radius: 50px;
     transform: scale(1.1);
 }
 #products .products_section .prod_one h2,
@@ -470,8 +477,9 @@ ul li a:hover::after{
     width: 100%;
     height: 70vh;
     padding: 30px 0;
-    background-color: black;
+    background-color: rgb(66, 64, 64);
     margin-top: 100px;
+    border-radius: 45px;
 }
 .footer .all-sec{
     display: flex;
@@ -563,6 +571,7 @@ ul li a:hover::after{
     justify-content: space-between;
     margin-left: 100px;
     margin-right: 100px;
+    transition: transform 0.5s ease-in-out;
 }
 .gallery-container .bridal img {
     width: 24%;  /* Adjust width as needed */
@@ -571,11 +580,12 @@ ul li a:hover::after{
     height: 350px;
     width: 250px;
     justify-content: center;
+    border-radius: 50px;
 }
 .gallery-container .bridal img:hover {
     opacity: 0.8;
     transform: scale(1.1);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 #gallery .gallery-container .african{
     display: flex;
@@ -591,6 +601,7 @@ ul li a:hover::after{
     height: 350px;
     width: 250px;
     justify-content: center;
+    border-radius: 50px;
 }
 .gallery-container .african img:hover {
     opacity: 0.8;
@@ -611,6 +622,7 @@ ul li a:hover::after{
     height: 350px;
     width: 250px;
     justify-content: center;
+    border-radius: 50px;
 }
 .gallery-container .casual img:hover {
     opacity: 0.8;
@@ -676,6 +688,10 @@ textarea {
 }
 .btn.btn2:hover{
     background-color: rgb(133, 129, 129);      
+}
+#map{
+    height: 250px;
+    width: 35%;
 }
 
 /*media*/
@@ -808,8 +824,8 @@ textarea {
     }
     .footer{
         width: 100%;
-        height: 100vh;
-        margin-top: 450px;
+        height: 500vh;
+        margin-top: 350px;
         background-color: black;
     }
     #products.products_section{
@@ -824,7 +840,7 @@ textarea {
     }
     .footer{
         width: 100%;
-        height: 100vh;
+        height: 200vh;
         margin-top: 200px;
     }
     .footer .all-sec .social,
@@ -838,9 +854,10 @@ textarea {
     }
     .footer{
         width: 100%;
-        height: 140vh;
+        height: 150vh;
         margin-top: 600px;
         background-color: black;
+        margin-top: 35px;
     }
     .container2{
         width: 100%;
@@ -848,11 +865,16 @@ textarea {
         margin-bottom: 100px;
     } 
     #gallery{
-        margin-top: 100px;     
+        margin-top: 65px;     
     }
     #products.products_section{
         justify-content: center;
         flex-wrap: wrap;
+    }
+    #map{
+        height: 100px;
+        width: 50%;
+        justify-content: center;
     }
 }
 
