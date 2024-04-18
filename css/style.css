@@ -29,7 +29,7 @@ header #home{
     padding: 0.3px 35px;
     color: #fff;
     z-index: 900;
-    border-radius: 20px;
+    height: 10%;
 }
 header #home .brand{
     color: #fff;
@@ -111,7 +111,7 @@ header .btn{
 .container{
     width: 100%;
     height: 90vh;
-    background: url("../images/bd.jpg");
+    background: url(../images/bd.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -190,6 +190,7 @@ ul li a:hover::after{
     width: 90%;
     margin: 0 auto;
     display: flex;
+    padding-top: 100px;
 }
 #about .img-sec img{
     width: 500px;
@@ -225,7 +226,8 @@ ul li a:hover::after{
 /*----four colums----*/
 #main-col{
     width: 100%;
-    background: #d3cbcb;
+    padding-top: 100px;
+    
 }
 #main-col .title{
     font-size: 3rem;
@@ -264,11 +266,84 @@ ul li a:hover::after{
     width: 100%;
     height: 40vh;
     padding: 30px;
+    background: #d3cbcb;
 }
 #main-col .col .one:hover,
 #main-col .col .two:hover,
 #main-col .col .three:hover,
 #main-col .col .four:hover{
+    background-color: rgb(216, 102, 136);
+    transition: 0.7s ease-in;
+    border-radius: 25px;
+    transform: scale(1.1);
+}
+#team{
+    width: 100%;
+    padding-top: 150px;
+}
+#team .title{
+    font-size: 3rem;
+    padding: 10px 0;
+    background-color: white;
+    text-align: center;
+}
+#team .col{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#team .col img{
+    width: 25px;
+    height: 25px;
+    transition: transform 0.5s;
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 1.5vmin;
+    color: white;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#team .col h1{
+    font-size: 3.5vmin;
+    padding-bottom: 5px;
+    font-style: italic;
+    text-align: center;
+}
+#team .col h2{
+    font-size: 30px;
+    padding-bottom: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+#team .col h2:hover{
+    color: white;
+}
+#team .col p{
+    font-size: 3vmin;
+    color: black;
+}
+#team .col p:hover{
+    color: rgb(247, 240, 242);
+}
+#team .col .one,
+#team .col .two,
+#team .col .three,
+#team .col .four{
+    width: 100%;
+    height: 30vh;
+    padding: 25px;
+    margin-top: 30px;
+    margin-left: 25px;
+    justify-content: center;
+}
+#team .col .one:hover,
+#team .col .two:hover,
+#team .col .three:hover,
+#team .col .four:hover{
     background-color: rgb(216, 102, 136);
     transition: 0.7s ease-in;
     border-radius: 25px;
@@ -557,6 +632,9 @@ ul li a:hover::after{
     color: white;
 }
 /*gallery*/
+#gallery{
+    padding-top: 100px;
+}
 
 #gallery h1{
     text-align: center;
@@ -566,12 +644,12 @@ ul li a:hover::after{
 }
 #gallery section h3{
     text-align: center;
-    color: rgb(216, 102, 136);
+    color: white;
     font-size: 30px;
     padding-bottom: 30px;
 }
 .gallery-container{
-    background-color: rgb(187, 181, 181);
+    background-color: rgb(216, 102, 136, 0.7);
 }
 #gallery .gallery-container .bridal{
     display: flex;
@@ -647,10 +725,12 @@ ul li a:hover::after{
     transform: translateY(-15px);
 }
 /*contacts*/
-#contacts .container2{
-    max-width: 800px;
-    margin: 0 auto;
-    justify-content: center;
+#contacts{
+    padding-top: 100px;
+}
+#contacts .contact-right{
+    background: linear-gradient(rgb(0, 0, 0, 0.545), rgb(0, 0, 0, 0.550)), url(../images/bg2.jpg);
+    
 }
 #contacts .container2 h1{
     font-size: 3rem;
@@ -664,6 +744,7 @@ ul li a:hover::after{
 }
 .contact-right form{
     width: 100%;
+    justify-content: center;
 }
 form input, form textarea{
     width: 50%;
@@ -810,6 +891,24 @@ textarea {
     #main-col .col .four{
         padding: 50px;
         height: 200px;
+    }
+    #team{
+        width: 100%;
+    }
+    #team .col{
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+    #team .col .one,
+    #team .col .two,
+    #team .col .three,
+    #team .col .four{
+        padding: 50px;
+        height: 200px;
+    }
+    #contacts .container2{
+        padding-top: 20px;
     }
     .pricing{
         width: 100%;
